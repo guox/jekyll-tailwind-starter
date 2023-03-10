@@ -18,8 +18,8 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"a template for deploy Jekyll + Tailwindcss site on Github Pages","headline":"在Github Pages上部署Jekyll+Tailwindcss的模版","name":"Jekyll+Tailwindcss Starter","url":"/"}</script>
 <!-- End Jekyll SEO tag -->
   
-    <link rel="preload" href="/assets/css/style.css?1678424730" as="style" />
-    <link rel="stylesheet" href="/assets/css/style.css?1678424730" />
+    <link rel="preload" href="/assets/css/style.css?1678437498" as="style" />
+    <link rel="stylesheet" href="/assets/css/style.css?1678437498" />
 </head>
 <body>
     <nav>
@@ -30,7 +30,62 @@
             在Github Pages上部署Jekyll+Tailwindcss的模版
         </h1>
         <section>
-            
+            <blockquote>
+  <p>Github Pages现在已经<a href="https://github.blog/2022-08-10-github-pages-now-uses-actions-by-default/">默认使用Actions进行部署</a>，因此理论上任何静态网站框架都可以使用Actions进行部署，而不再需要像以前那样部署到新的分支。当然，部署到分支的方法还是可以使用的。</p>
+</blockquote>
+
+<p>本项目是基于Jekyll+Tailwindcss如何在Github Pages上进行部署的模版，分别可以使用Actions部署或传统分支部署的方式。</p>
+
+<h2 id="前提">前提</h2>
+
+<ul>
+  <li>你已经使用Jekyll+Tailwindcss在本地创建了自己的网站</li>
+  <li>这个网站在本地运行正常</li>
+  <li>你的环境和下方的环境相似</li>
+  <li>你已经有一个Github帐号</li>
+</ul>
+
+<h2 id="环境">环境</h2>
+
+<ul>
+  <li>Jekyll v4.3.2</li>
+  <li>Tailwindcss v3.2.7</li>
+  <li>Node.js v18.14</li>
+  <li>ruby v3.1.2</li>
+</ul>
+
+<p><em>上述版本<code class="language-plaintext highlighter-rouge">xxx.yyy.zzz</code>中，如果<code class="language-plaintext highlighter-rouge">xxx</code>是一样的，理论上不会有任何问题。</em></p>
+
+<h2 id="发布到github-pages">发布到Github Pages</h2>
+
+<p>下列方式二选一，当你再次向你的主分支推送后，将自动编译和部署你的网站到Github Pages。</p>
+
+<h3 id="使用actions进行部署">使用Actions进行部署</h3>
+
+<p>第一步：将<a href="https://github.com/guox/jekyll-tailwind-starter/blob/main/.github/workflows/gh-pages-with-actions.yml">gh-pages-with-actions.yml</a>复制到你的项目<code class="language-plaintext highlighter-rouge">/.github/workflows/</code>目录下。</p>
+
+<p>第二步：设置Github Pages Source为<strong>Github Actions</strong></p>
+
+<p><img src="/assets/images/ghpages-source-action.png" alt="Github Pages Source: Actions" /></p>
+
+<h3 id="使用部署到分支">使用部署到分支</h3>
+
+<p>第一步：将<a href="https://github.com/guox/jekyll-tailwind-starter/blob/main/.github/workflows/gh-pages-from-branch.yml">gh-pages-from-branch.yml</a>复制到你的项目<code class="language-plaintext highlighter-rouge">/.github/workflows/</code>目录下。</p>
+
+<p>第二步：设置Github Pages Source为<strong>Deploy from a branch</strong>，分支选择<strong>gh-pages</strong></p>
+
+<p><img src="/assets/images/ghpages-source-branch.png" alt="Github Pages Source: from a branch" /></p>
+
+<p><em>你不需要提前创建gh-pages分支，当你推送<code class="language-plaintext highlighter-rouge">gh-pages-from-branch.yml</code>到Github仓库后，会自动创建gh-pages分支。</em></p>
+
+<h2 id="源码和demo">源码和demo</h2>
+
+<p><a href="https://github.com/guox/jekyll-tailwind-starter">https://github.com/guox/jekyll-tailwind-starter</a></p>
+
+<h2 id="许可">许可</h2>
+
+<p>MIT</p>
+
 
         </section>
     </article>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>A template for build and deploy Jekyll+Tailwindcss on Github Pages | Jekyll+Tailwindcss Starter</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="A template for build and deploy Jekyll+Tailwindcss on Github Pages" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="a template for deploy Jekyll + Tailwindcss site on Github Pages" />
+<meta property="og:description" content="a template for deploy Jekyll + Tailwindcss site on Github Pages" />
+<meta property="og:site_name" content="Jekyll+Tailwindcss Starter" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="A template for build and deploy Jekyll+Tailwindcss on Github Pages" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"a template for deploy Jekyll + Tailwindcss site on Github Pages","headline":"A template for build and deploy Jekyll+Tailwindcss on Github Pages","url":"/en/"}</script>
+<!-- End Jekyll SEO tag -->
+  
+    <link rel="preload" href="/assets/css/style.css?1678437498" as="style" />
+    <link rel="stylesheet" href="/assets/css/style.css?1678437498" />
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <article>
+        <h1>
+            A template for build and deploy Jekyll+Tailwindcss on Github Pages
+        </h1>
+        <section>
+            <blockquote>
+  <p>Since <a href="https://github.blog/2022-08-10-github-pages-now-uses-actions-by-default/">GitHub Pages now uses Actions by default</a>, theoretically any static web framework can be deployed using Actions, instead of the classic way: deploy from a branch. However, deploy from a branch is still available.</p>
+</blockquote>
+
+<p>This project is a starter template for build and deploy Jekyll+Tailwindcss site on Github Pages, which can be deployed using Actions or deploy from a branch.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>You have created a Jekyll+Tailwindcss site</li>
+  <li>The site is working fine locally</li>
+  <li>Your environment is similar to the following</li>
+  <li>You already have a Github account</li>
+</ul>
+
+<h2 id="environment">Environment</h2>
+
+<ul>
+  <li>Jekyll v4.3.2</li>
+  <li>Tailwindcss v3.2.7</li>
+  <li>Node.js v18.14</li>
+  <li>ruby v3.1.2</li>
+</ul>
+
+<p><em>In the above version numbers <code class="language-plaintext highlighter-rouge">xxx.yyy.zzz</code>, if <code class="language-plaintext highlighter-rouge">xxx</code> is the same, generally there will not be any problem.</em></p>
+
+<h2 id="publish-to-github-pages">Publish to Github Pages</h2>
+
+<p>Just choose one of the delopyment methods below, and your site will be automatically build and deploy to Github Pages when you push to your <code class="language-plaintext highlighter-rouge">main</code> branch.</p>
+
+<h3 id="using-actions">Using Actions</h3>
+
+<p>Step 1: Copy <a href="https://github.com/guox/jekyll-tailwind-starter/blob/main/.github/workflows/gh-pages-with-actions.yml">gh-pages-with-actions.yml</a> to your project <code class="language-plaintext highlighter-rouge">/.github/workflows/</code> directory.</p>
+
+<p>Step 2: Set Github Pages Source to <strong>Github Actions</strong></p>
+
+<p><img src="/assets/images/ghpages-source-action.png" alt="Github Pages Source: Actions" /></p>
+
+<h3 id="deploy-from-a-branch">Deploy from a branch</h3>
+
+<p>Step 1: Copy <a href="https://github.com/guox/jekyll-tailwind-starter/blob/main/.github/workflows/gh-pages-from-branch.yml">gh-pages-from-branch.yml</a> to your project <code class="language-plaintext highlighter-rouge">/.github/workflows/</code> directory.</p>
+
+<p>Step 2: Set Github Pages Source to <strong>Github Actions</strong> and Branch to <strong>gh-pages</strong></p>
+
+<p><img src="/assets/images/ghpages-source-branch.png" alt="Github Pages Source: from a branch" /></p>
+
+<p><em>Note: You don’t need to create <strong>gh-page</strong> branch in advance, when you push <code class="language-plaintext highlighter-rouge">gh-pages-from-branch.yml</code> to Github repo, <strong>gh-pages</strong> branch will be created automatically.</em></p>
+
+<h2 id="source-code-and-demo">Source code and demo</h2>
+
+<p>See <a href="https://github.com/guox/jekyll-tailwind-starter">https://github.com/guox/jekyll-tailwind-starter</a></p>
+
+<h2 id="license">License</h2>
+
+<p>MIT</p>
+
+
+        </section>
+    </article>
+    <footer>
+
+    </footer>
+</body>
+</html>
