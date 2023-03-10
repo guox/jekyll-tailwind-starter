@@ -7,20 +7,19 @@
     <link rel="preload" href="/assets/css/style.css?{{ site.time | date: "%s" }}" as="style" />
     <link rel="stylesheet" href="/assets/css/style.css?{{ site.time | date: "%s" }}" />
 </head>
-<body>
-    <nav>
-
+<body class="bg-slate-50 text-gray-700">
+    <nav class="w-full px-4 py-1.5 mb-8">
+        {% assign homepage = site.pages | where: "layout", "default" %}
+        {% for item in homepage %}
+            <a class="inline-block px-1 mr-2 last:mr-0 hover:lang-active {% if page.url == item.url -%}lang-active{%- endif -%}" href="{{ item.url }}">{{ item.lang | replace: 'zh', '中文' | replace: 'en', 'English' }}</a>
+        {% endfor %}
     </nav>
-    <article>
-        <h1>
-            {{ page.title}}
+    <article class="container lg:w-[1000px] px-4 m-auto mb-8">
+        <h1 class="text-3xl text-center mt-0 mb-8">
+            {{ page.title }}
         </h1>
         <section>
             {{ content }}
         </section>
     </article>
-    <footer>
-
-    </footer>
-</body>
 </html>

@@ -3,3 +3,68 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+    article a {
+        @apply text-sky-500 no-underline;
+    }
+    
+    article a:hover {
+        @apply text-sky-500 underline;
+    }
+    p {
+        @apply leading-7 mb-2.5;
+    }
+    article ul li {
+        @apply list-disc mt-2.5;
+    }
+    article ol li {
+        @apply list-decimal mt-2.5;
+    }
+    article ul, article ol {
+        @apply pl-10 my-4;
+    }
+    img {
+        @apply mb-2.5;
+    }
+    code, pre {
+        @apply font-mono text-sm;
+    }
+    code {
+        @apply bg-slate-200 py-px px-1 mx-px rounded;
+    }
+    
+    pre {
+        @apply block p-4 mb-2.5 bg-slate-100 overflow-x-auto rounded-lg;
+    }
+    
+    pre code {
+        @apply p-0 bg-inherit;
+    }
+    h1,h2,h3,h4,h5 {
+        @apply font-bold my-5;
+    }
+    h1 {
+        @apply text-3xl;
+    }
+    
+    h2 {
+        @apply text-2xl;
+    }
+    
+    h3 {
+        @apply text-xl;
+    }
+}
+@layer utilities {
+    blockquote {
+        @apply block p-4 my-5 text-gray-500 bg-cyan-50 rounded-lg border border-cyan-200;
+    }
+
+    blockquote p, blockquote ul, blockquote ol {
+        @apply last:mb-0;
+    }
+    .lang-active {
+        @apply bg-sky-500 text-white rounded;
+    }
+}
