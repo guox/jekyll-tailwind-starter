@@ -1,0 +1,23 @@
+name: Jekyll+Tailwindcss Starter
+description: a template for deploy Jekyll + Tailwindcss site on Github Pages
+github: https://github.com/guox/jekyll-tailwind-starter
+license: MIT
+defaults:
+  - scope:
+      path: pages
+      type: pages
+    values:
+      layout: default
+postcss:
+  cache: false
+exclude:
+- CNAME
+- README.md
+- LICENSE
+- package-lock.json
+- package.json
+- tailwind.config.js
+- postcss.config.js
+plugins:
+  - jekyll-postcss
+  - jekyll-seo-tag
