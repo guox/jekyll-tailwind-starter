@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main # set your branch name to trigger deployment, usually it is main or master by default. 
-  pull_request:
 
 permissions:
   contents: write
